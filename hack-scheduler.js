@@ -6,6 +6,7 @@ threadsNeededToWeakenForHack = args[1];
 threadsNeededToHack = args[2];
 weakenExecutionTime = args[3];
 hackExecutionTime = args[4];
+
 i = args[5]; //i allows this script to run concurrent copies
 
 stepDelay = 7;

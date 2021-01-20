@@ -2,12 +2,12 @@ hostName = getHostname();
 
 //thanks to these sweet functions you no longer have to do this manually
 //THIS FUNCTION ALONE IS VERY EXPENSIVE (4GB!!), comment this out and input them manually if you're having RAM issues.
-// mults = getHackingMultipliers();
+mults = getHackingMultipliers();
 
-// playerHackingMoneyMult = mults.money;
-// playerHackingGrowMult = mults.growth;
-playerHackingMoneyMult = 156.55;
-playerHackingGrowMult = 136.13;
+playerHackingMoneyMult = mults.money;
+playerHackingGrowMult = mults.growth;
+//playerHackingMoneyMult = 156.55;
+//playerHackingGrowMult = 136.13;
 
 bitnodeGrowMult = 1.00;
 bitnodeWeakenMult = 1.00;
@@ -19,10 +19,10 @@ bitnodeWeakenMult = 1.00;
 // // ServerWeakenRate: 1,
 // // ScriptHackMoney: 1,
 // playerHackingMoneyMult *= mults.ScriptHackMoney; //applying the multiplier directly to the player mult
-// bitnodeGrowMult = mults.ServerGrowthRate;
+//bitnodeGrowMult = mults.ServerGrowthRate;
 
 // //and this is for weaken
-// bitnodeWeakenMult = mults.ServerWeakenRate;
+//bitnodeWeakenMult = mults.ServerWeakenRate;
 
 //percent to take from the server with each pass, this is something you can configure if you want.. take care though.
 percentageToSteal = 0.1;
@@ -59,16 +59,16 @@ hackThreadHardening = 0.002;
 weakenThreadPotency = 0.05 * bitnodeWeakenMult;
 
 // hacking target requires 1.50GB of RAM to run for 1 thread(s)
-hackCost = 1.5;
+hackCost = 1.75;
 
 // weaken-target.script requires 1.55GB of RAM to run for 1 thread(s)
-weakenCost = 1.555;
+weakenCost = 1.8;
 
 // grow-target.script requires 1.55GB of RAM to run for 1 thread(s)
-growCost = 1.555;
+growCost = 1.8;
 
 // one-time scheduler cost per cycle
-schedulerCost = 2.50 * 2;
+schedulerCost = 2.60 * 2;
 
 //step delay to force the timing on the scheduler.
 stepDelay = 7;
